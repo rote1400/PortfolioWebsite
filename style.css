@@ -156,6 +156,8 @@ section {
 
 .section-container {
     display: flex;
+    gap: 4rem;
+    height: 80%;
 }
 
 /* Profile section */
@@ -228,30 +230,73 @@ section {
     transition: all 300ms ease;
 }
 
-.btn-color-1,
-.btn-color-2 {
+.btn-cv,
+.btn-contact {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
+.btn-cv:hover,
+.btn-contact:hover {
     cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn-contact,
+.btn-cv:hover {
     color: white;
     background: rgb(53, 53, 53);
 }
 
-.btn-color-1:hover {
+.btn-contact:hover {
     background: rgb(0, 0, 0);
 }
 
-.btn-color-2 {
+.btn-cv {
     background: none;
 }
 
-.btn-color-2:hover {
+.btn-cv:hover {
     background: rgb(255, 255, 255) 0.1rem solid;
 }
+
+/* About Section */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
