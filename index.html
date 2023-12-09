@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="media.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Johhn D</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav id="desktop-nav" class="desktop-nav">
+            <div class="logo">Rosen T</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <nav id="hamburger-nav">
-        <div class="logo">Johhn D</div>
+        <div class="logo">Rosen T</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -36,38 +38,40 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section-pic-container">
-            <img src="./assets/profile-pic.png" alt="Johhn profile-pic">
-        </div>
-        <div class="section-text">
-            <p class="section-text-p1">Hello, I'm</p>
-            <h1 class="title">Johhn D</h1>
-            <p class="section-text-p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-cv" 
-                    onclick="window.open('./assets/resume-examplee.pdf')"
-                >
-                    Download CV
-                </button>
-                <button 
-                    class="btn btn-contact" 
-                    onclick="location.href='./#contact'"
-                >
-                    Contact Info
-                </button>
+        <div class="profile-container">
+            <div class="section-pic-container">
+                <img src="./assets/Rosen-pic.jpg" alt="Johhn profile-pic">
             </div>
-            <div id="socials-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="My LinkedIn"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/rosentenov/'">
-                <img
-                    src="./assets/github.png"
-                    alt="My GitHub"
-                    class="icon" 
-                    onclick="location.href='https://github.com/rote1400'">
+            <div class="section-text">
+                <p class="section-text-p1">Hello, I'm</p>
+                <h1 class="title">Rosen Tenov</h1>
+                <p class="section-text-p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-cv" 
+                        onclick="window.open('./assets/resume-examplee.pdf')"
+                    >
+                        Download CV
+                    </button>
+                    <button 
+                        class="btn btn-contact" 
+                        onclick="location.href='./#contact'"
+                    >
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="My LinkedIn"
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/rosentenov/'">
+                    <img
+                        src="./assets/github.png"
+                        alt="My GitHub"
+                        class="icon" 
+                        onclick="location.href='https://github.com/rote1400'">
+                </div>
             </div>
         </div>
     </section>
