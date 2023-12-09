@@ -12,6 +12,8 @@ body {
     background: rgb(219, 217, 216);
     min-height: 200vh;
     font-family: 'JetBrains Mono', monospace;
+    background: url(./assets/unsplashLaptop.jpg);
+    background-size: cover;
 }
 
 html {
@@ -60,11 +62,22 @@ nav {
     z-index: 1;
 }
 
+#desktop-nav a {
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
 #desktop-nav .logo {
     position: relative;
     font-size: 700;
     color: #fff;
     text-decoration: none;
+    text-decoration-color: white;
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 2px;
@@ -93,15 +106,24 @@ nav {
     transition: 0.6s;
 }
 
+#desktop-nav li a logo {
+    color: #fff;
+}
+
+#desktop-nav.sticky ul li a .logo {
+    color: #fff;
+    font-size: 46px;
+}
+
 #desktop-nav.sticky {
     padding: 5px 100px;
     height: 5%;
-    color: #000;
+    color: #fff;
     background-color: rgba(255, 255, 255, 0.2);    
 }
 
 #desktop-nav.sticky ul li a {
-    color: #000;
+    color: #fff;
 }
 
 a {
@@ -113,16 +135,19 @@ a {
 a:hover {
     color: grey;
     text-decoration: underline;
+    font-size: 26px;
     text-decoration-color: rgb(181, 181, 181);
     text-underline-offset: 0.75rem;
 }
 
 .logo {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    color: #fff;
+    font-size: 20px;
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Hamburger nav */
@@ -235,6 +260,14 @@ section {
     background-size: cover;
 }
 
+#profile .title {
+    color: #000;
+}
+
+#profile .section-text-p1 {
+    color: #000;
+}
+
 .profile-container {
     border: rgb(255, 255, 255) 0.1rem solid;
     border-radius: 2%;
@@ -274,6 +307,7 @@ section {
 
 .section-text-p1 {
     text-align: center;
+    color: #fff;
     margin-top: 40px;
 }
 
@@ -284,6 +318,7 @@ section {
 
 .title {
     font-size: 3rem;
+    color: #fff;
     text-align: center;
 }
 
@@ -365,6 +400,7 @@ section {
 .about-containers,
 .about-details-container {
     display: flex;
+    color: #fff;
 }
 
 .about-pic {
@@ -375,6 +411,11 @@ section {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+    background-color: #fff;
+}
+
+.text-container p {
+    color: #fff;
 }
 
 .details-container {
